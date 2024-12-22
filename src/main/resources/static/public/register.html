@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/public/css/bootstrap.min.css">
+	<title>Register | FitBuddy</title>
+</head>
+<body>
+<!-- Page Header -->
+<div class="text-center">
+	<h1 class="display-1 mt-5">FitBuddy</h1>
+</div>
+
+<!-- Registration Form Container -->
+<div class="container py-5 h-100">
+	<div class="row d-flex justify-content-center align-items-center h-100">
+		<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+			<div class="card shadow-2-strong" style="border-radius: 1rem;">
+				<div class="card-body p-5 text-center">
+					<h2 class="mb-4">Register</h2>
+					<form id="registerForm" onsubmit="onRegister(event)">
+						<!-- Username Field -->
+						<div class="mb-3">
+							<label for="name" class="form-label">Username</label>
+							<input type="text" class="form-control" id="name" name="name" autofocus required>
+						</div>
+						<!-- Password Field -->
+						<div class="mb-3">
+							<label for="password" class="form-label">Password</label>
+							<input type="password" class="form-control" id="password" name="password" required>
+						</div>
+						<!-- Confirm Password Field -->
+						<div class="mb-3">
+							<label for="passwordConfirm" class="form-label">Confirm Password</label>
+							<input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" required>
+						</div>
+						<!-- Back to Login Link -->
+						<div class="mb-3">
+							<a href="/login" class="text-decoration-none">Back to Login</a>
+						</div>
+						<!-- Submit Button -->
+						<button type="submit" class="btn btn-primary w-100">Register</button>
+					</form>
+				</div>
+			</div>
+			<!-- Status Message -->
+			<div id="status-message" class="text-center mt-3 text-danger"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script src="/public/js/bootstrap.bundle.min.js"></script>
+<script src="/public/js/register.js"></script>
+<script src="/public/js/commons.js"></script>
+</body>
+</html>
